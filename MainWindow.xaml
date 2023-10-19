@@ -8,7 +8,8 @@
         Title="MainWindow" Height="550" Width="1000" WindowStartupLocation="CenterScreen" Name="Form" MinWidth="1000" MinHeight="550" PreviewKeyDown="MainWindow_KeyDown" PreviewKeyUp="Form_PreviewKeyUp">
     
     <Window.Resources>
-        <Style x:Key="BorderButtonStyle" TargetType="Border">
+        <ResourceDictionary Source="ExpressionDark.xaml" />
+        <!--<Style x:Key="BorderButtonStyle" TargetType="Border">
             <Setter Property="CornerRadius" Value="10"/>
         </Style>
         <Style TargetType="Button" x:Key="redBtn">
@@ -110,7 +111,7 @@
         </Style>
         <Style TargetType="TextBox">
             <Setter Property="Margin" Value="2"></Setter>
-        </Style>
+        </Style>-->
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -205,19 +206,20 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="`" Name="Oem3" Style="{StaticResource redBtn}"/>
-            <Button Grid.Column="1" Content="1" x:Name="D1" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Column="2" Content="2" Name="D2" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Column="3" Content="3" Name="D3" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Column="4" Content="4" Name="D4" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Column="5" Content="5" Name="D5" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Column="6" Content="6" Name="D6" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Column="7" Content="7" Name="D7" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Column="8" Content="8" Name="D8" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Column="9" Content="9" Name="D9" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Column="10" Content="0" Name="D0" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Column="11" Content="-" Name="OemMinus" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Column="12" Content="=" Name="OemPlus" Style="{StaticResource greenBtn}" ></Button>
+            <Button Grid.Column="0" Content="`" Name="Oem3" />
+           
+            <Button Grid.Column="1" Content="1" x:Name="D1"  ></Button>
+            <Button Grid.Column="2" Content="2" Name="D2"  ></Button>
+            <Button Grid.Column="3" Content="3" Name="D3"  ></Button>
+            <Button Grid.Column="4" Content="4" Name="D4"  ></Button>
+            <Button Grid.Column="5" Content="5" Name="D5" ></Button>
+            <Button Grid.Column="6" Content="6" Name="D6" ></Button>
+            <Button Grid.Column="7" Content="7" Name="D7" ></Button>
+            <Button Grid.Column="8" Content="8" Name="D8" ></Button>
+            <Button Grid.Column="9" Content="9" Name="D9"  ></Button>
+            <Button Grid.Column="10" Content="0" Name="D0" ></Button>
+            <Button Grid.Column="11" Content="-" Name="OemMinus" ></Button>
+            <Button Grid.Column="12" Content="=" Name="OemPlus"  ></Button>
             <Button Grid.Column="13" Grid.ColumnSpan="2" Content="Backspace" Name="Back"></Button>
         </Grid>
         <!--block3-->
@@ -241,19 +243,19 @@
                 <ColumnDefinition Width="32"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Tab"></Button>
-            <Button Grid.Row="3" Grid.Column="2" Content="q" Name="Q" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="3" Content="w" Name="W" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="4" Content="e" Name="E" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="5" Content="r" Name="R" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="6" Content="t" Name="T" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="7" Content="y" Name="Y" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="8" Content="u" Name="U" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="9" Content="i" Name="I" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="10" Content="o" Name="O" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="11" Content="p" Name="P" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="12" Content="[" Name="OemOpenBrackets" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="13" Content="]" Name="Oem6" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Row="3" Grid.Column="14" Content="\" Name="Oem5" Grid.ColumnSpan="2" Style="{StaticResource greenBtn}" ></Button>
+            <Button Grid.Row="3" Grid.Column="2" Content="q" Name="Q" ></Button>
+            <Button Grid.Row="3" Grid.Column="3" Content="w" Name="W"  ></Button>
+            <Button Grid.Row="3" Grid.Column="4" Content="e" Name="E"  ></Button>
+            <Button Grid.Row="3" Grid.Column="5" Content="r" Name="R"  ></Button>
+            <Button Grid.Row="3" Grid.Column="6" Content="t" Name="T"  ></Button>
+            <Button Grid.Row="3" Grid.Column="7" Content="y" Name="Y"  ></Button>
+            <Button Grid.Row="3" Grid.Column="8" Content="u" Name="U" ></Button>
+            <Button Grid.Row="3" Grid.Column="9" Content="i" Name="I"  ></Button>
+            <Button Grid.Row="3" Grid.Column="10" Content="o" Name="O"  ></Button>
+            <Button Grid.Row="3" Grid.Column="11" Content="p" Name="P"  ></Button>
+            <Button Grid.Row="3" Grid.Column="12" Content="[" Name="OemOpenBrackets" ></Button>
+            <Button Grid.Row="3" Grid.Column="13" Content="]" Name="Oem6" ></Button>
+            <Button Grid.Row="3" Grid.Column="14" Content="\" Name="Oem5" Grid.ColumnSpan="2"></Button>
         </Grid>
         <!--block4-->
         <Grid Grid.Row="4" Grid.ColumnSpan="15">
@@ -275,17 +277,17 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Name="Capital" Content="Caps Lock"></Button>
-            <Button Grid.Row="4" Grid.Column="2" Content="a" Name="A" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="3" Content="s" Name="S" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="4" Content="d" Name="D" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="5" Content="f" Name="F" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="6" Content="g" Name="G" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="7" Content="h" Name="H" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="8" Content="j" Name="J" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="9" Content="k" Name="K" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="10" Content="l" Name="L" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="11" Content=";" Name="Oem1" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Row="4" Grid.Column="12" Content="'" Name="OemQuotes" Style="{StaticResource greenBtn}" ></Button>
+            <Button Grid.Row="4" Grid.Column="2" Content="a" Name="A" ></Button>
+            <Button Grid.Row="4" Grid.Column="3" Content="s" Name="S"  ></Button>
+            <Button Grid.Row="4" Grid.Column="4" Content="d" Name="D" ></Button>
+            <Button Grid.Row="4" Grid.Column="5" Content="f" Name="F"  ></Button>
+            <Button Grid.Row="4" Grid.Column="6" Content="g" Name="G"  ></Button>
+            <Button Grid.Row="4" Grid.Column="7" Content="h" Name="H" ></Button>
+            <Button Grid.Row="4" Grid.Column="8" Content="j" Name="J"  ></Button>
+            <Button Grid.Row="4" Grid.Column="9" Content="k" Name="K" ></Button>
+            <Button Grid.Row="4" Grid.Column="10" Content="l" Name="L"  ></Button>
+            <Button Grid.Row="4" Grid.Column="11" Content=";" Name="Oem1"  ></Button>
+            <Button Grid.Row="4" Grid.Column="12" Content="'" Name="OemQuotes"  ></Button>
             <Button Grid.Row="4" Grid.Column="13" Content="Enter" Name="Return" Grid.ColumnSpan="2"></Button>
         </Grid>
         <!--block5-->
@@ -309,16 +311,16 @@
                 <ColumnDefinition Width="32"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0" Grid.ColumnSpan="3" Content="Shift" Name="LeftShift"></Button>
-            <Button Grid.Column="3" Content="z" Name="Z" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Column="4" Content="x" Name="X" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Column="5" Content="c" Name="C" Style="{StaticResource greenBtn}" ></Button>
-            <Button Grid.Column="6" Content="v" Name="V" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Column="7" Content="b" Name="B" Style="{StaticResource blueBtn}" ></Button>
-            <Button Grid.Column="8" Content="n" Name="N" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Column="9" Content="m" Name="M" Style="{StaticResource purpleBtn}" ></Button>
-            <Button Grid.Column="10" Content="," Name="OemComma" Style="{StaticResource redBtn}" ></Button>
-            <Button Grid.Column="11" Content="." Name="OemPeriod" Style="{StaticResource yellowBtn}" ></Button>
-            <Button Grid.Column="12" Content="/" Name="OemQuestion" Style="{StaticResource greenBtn}" ></Button>
+            <Button Grid.Column="3" Content="z" Name="Z" ></Button>
+            <Button Grid.Column="4" Content="x" Name="X"  ></Button>
+            <Button Grid.Column="5" Content="c" Name="C"  ></Button>
+            <Button Grid.Column="6" Content="v" Name="V" ></Button>
+            <Button Grid.Column="7" Content="b" Name="B" ></Button>
+            <Button Grid.Column="8" Content="n" Name="N"  ></Button>
+            <Button Grid.Column="9" Content="m" Name="M"  ></Button>
+            <Button Grid.Column="10" Content="," Name="OemComma"  ></Button>
+            <Button Grid.Column="11" Content="." Name="OemPeriod"  ></Button>
+            <Button Grid.Column="12" Content="/" Name="OemQuestion"  ></Button>
             <Button Grid.Column="13" Content="Shift" Name="RightShift" Grid.ColumnSpan="3"/>
         </Grid>
         <!--block6-->
